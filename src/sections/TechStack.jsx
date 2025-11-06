@@ -70,7 +70,7 @@ const TechStack = () => {
                   <div className="" />
                   <div className="tech-card-content">
                     <div className="tech-icon-wrapper">
-                      <img src={techStackIcon.imgPath} alt="" className="w-32 flow" />
+                      <img src={techStackIcon.imgPath} alt={`${techStackIcon.name} technology icon`} className="w-32 flow" />
                     </div>
                     <div className="padding-x w-full">
                       <p>{techStackIcon.name}</p>

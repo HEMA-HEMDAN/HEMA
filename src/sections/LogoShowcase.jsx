@@ -9,13 +9,13 @@ const LogoShowcase = () => (
       <div className="marquee-box md:gap-12 gap-5">
         {logoIconsList.map((icon, index) => (
           <div className="flex-none flex-center marquee-item" key={index}>
-            <img src={icon.imgPath} alt={icon.name} />
+            <img src={icon.imgPath} alt={`${icon.name} company logo`} />
           </div>
         ))}
 
         {logoIconsList.map((icon, index) => (
           <div className="flex-none flex-center marquee-item" key={index}>
-            <img src={icon.imgPath} alt={icon.name} />
+            <img src={icon.imgPath} alt={`${icon.name} company logo`} />
           </div>
         ))}
       </div>
