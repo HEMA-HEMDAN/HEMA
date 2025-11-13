@@ -48,7 +48,12 @@ const AppShowcase = () => {
   }, []);
 
   return (
-    <div id="work" ref={sectionRef} className="app-showcase">
+    <section
+      id="work"
+      ref={sectionRef}
+      className="app-showcase"
+      aria-label="Featured client projects"
+    >
       <div className="w-full">
         <div className="showcaselayout">
           <div ref={rydeRef} className="first-project-wrapper">
@@ -61,14 +66,16 @@ const AppShowcase = () => {
                 <img
                   src="/images/projects/masr.png"
                   alt="Athar Masr project screenshot"
+                  loading="lazy"
                 />
               </a>
             </div>
             <div className="text-content">
               <h2>Athar Masr - Egyptian Heritage App</h2>
               <p className="text-white-50 md:text-xl">
-                An app built with React Native, Expo, & TailwindCSS for a fast,
-                user-friendly experience.
+                React Native, Expo, and TailwindCSS power an accessible heritage
+                guide with multilingual stories, offline support, and smooth
+                performance on mid-range devices.
               </p>
             </div>
           </div>
@@ -84,9 +91,10 @@ const AppShowcase = () => {
                 <img
                   src="/images/projects/mo.png"
                   alt="Overdose Math web app screenshot"
+                  loading="lazy"
                 />
               </a>
-              <h2>Overdose Math - Learning Platform</h2>
+              <h2>Overdose Math - React Learning Platform</h2>
             </div>
 
             <div className="project" ref={ycDirectoryRef}>
@@ -99,6 +107,7 @@ const AppShowcase = () => {
                 <img
                   src="/images/projects/ahmed.png"
                   alt="Dr Ahmed Gad website screenshot"
+                  loading="lazy"
                 />
               </a>
 
@@ -107,7 +116,7 @@ const AppShowcase = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

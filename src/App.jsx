@@ -83,14 +83,16 @@ const App = () => {
 
       {/* Main App */}
       <Navbar />
-      <Hero />
-      <ShowcaseSection />
-      <LogoShowcase />
-      <FeatureCards />
-      {/* <Experience /> */}
-      <TechStack />
-      {/* <Testimonials /> */}
-      <Contact />
+      <main id="main-content" role="main">
+        <Hero />
+        <ShowcaseSection />
+        <LogoShowcase />
+        <FeatureCards />
+        {/* <Experience /> */}
+        <TechStack />
+        {/* <Testimonials /> */}
+        <Contact />
+      </main>
       <Footer />
       <WhatsAppButton />
     </>

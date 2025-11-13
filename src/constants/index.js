@@ -86,17 +86,17 @@ const abilities = [
   {
     imgPath: "/images/seo.png",
     title: "Quality Focus",
-    desc: "Delivering high-quality results while maintaining  attention to every detail.",
+    desc: "Delivering high-quality results with rigorous reviews, testing, and UI polish.",
   },
   {
     imgPath: "/images/chat.png",
     title: "Reliable Communication",
-    desc: " Keeping you updated at every step to ensure transparency and clarity.",
+    desc: "Keeping you updated at every step with async stand-ups and clear next actions.",
   },
   {
     imgPath: "/images/time.png",
     title: "On-Time Delivery",
-    desc: "Making sure projects are completed on schedule, with quality & attention to detail.",
+    desc: "Planning realistic sprints so milestones land on schedule without compromising quality.",
   },
 ];
 
@@ -106,7 +106,7 @@ const techStackImgs = [
     imgPath: "/images/logos/react.png",
   },
   {
-    name: "java script Developer",
+    name: "JavaScript Developer",
     imgPath: "/images/logos/js.png",
   },
   {
