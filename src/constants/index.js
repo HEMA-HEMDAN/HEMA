@@ -68,10 +68,7 @@ const logoIconsList = [
     imgPath: "/images/logos/company-logo-8.png",
     name: "company-logo-8",
   },
-  {
-    imgPath: "/images/logos/company-logo-9.png",
-    name: "company-logo-9",
-  },
+
   {
     imgPath: "/images/logos/company-logo-10.png",
     name: "company-logo-10",
