@@ -278,6 +278,59 @@ const socialImgs = [
   },
 ];
 
+
+const projects = [
+  {
+    title: "Athar Masr - Egyptian Heritage App",
+    desc: "React Native, Expo, and TailwindCSS power an accessible heritage guide with multilingual stories, offline support, and smooth performance on mid-range devices.",
+    subdesc: "",
+    href: "https://masr.pages.dev/",
+    texture: "/images/projects/masr.png",
+    logo: "/images/projects/masr-logo.png", // Placeholder if needed
+    logoStyle: {
+      backgroundColor: "#2A1816",
+      border: "0.2px solid #36201D",
+      boxShadow: "0px 0px 60px 0px #AA3C304D",
+    },
+  },
+  {
+    title: "Overdose Math - React Learning Platform",
+    desc: "A dedicated platform for learning mathematics, built with React to provide an interactive and engaging user experience.",
+    subdesc: "",
+    href: "https://overdosemath.com",
+    texture: "/images/projects/mo.png",
+    logo: "/images/projects/project-logo2.png",
+    logoStyle: {
+      backgroundColor: "#13202F",
+      border: "0.2px solid #17293E",
+      boxShadow: "0px 0px 60px 0px #2F6DB54D",
+    },
+  },
+  {
+    title: "Dr Ahmed Gad - Medical Clinic Website",
+    desc: "A professional medical clinic website featuring appointment booking, service listings, and patient information.",
+    subdesc: "",
+    href: "https://dr-ahmed-gad.com/",
+    texture: "/images/projects/ahmed.png",
+    logo: "/images/projects/project-logo3.png",
+    logoStyle: {
+      backgroundColor: "#60f5a1",
+      background:
+        "linear-gradient(0deg, #60F5A150, #60F5A150), linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(208, 213, 221, 0.8) 100%)",
+      border: "0.2px solid rgba(208, 213, 221, 1)",
+      boxShadow: "0px 0px 60px 0px rgba(35, 131, 96, 0.3)",
+    },
+  },
+  
+];
+
+const heroContent = {
+  title: ["Shaping", "Ideas", "into Real Projects", "that Deliver Results"],
+  description:
+    "Hi, I’m Ibrahim, a developer based in Egypt with a passion for code.",
+  buttonText: "See My Work",
+};
+
 export {
   words,
   abilities,
@@ -290,4 +343,6 @@ export {
   techStackIcons,
   techStackImgs,
   navLinks,
+  projects,
+  heroContent,
 };

@@ -85,8 +85,8 @@ const App = () => {
       <Navbar />
       <main id="main-content" role="main">
         <Hero />
-        {/* <ShowcaseSection /> */}
-        <LogoShowcase />
+        <ShowcaseSection />
+        {/* <LogoShowcase /> */}
         <FeatureCards />
         {/* <Experience /> */}
         <TechStack />

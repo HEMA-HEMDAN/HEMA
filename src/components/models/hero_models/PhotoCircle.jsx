@@ -2,7 +2,7 @@ import React, { useRef, useState, useEffect } from "react";
 import { useFrame, useLoader } from "@react-three/fiber";
 import { TextureLoader } from "three";
 
-const PhotoCircle = ({ backImageUrl = "/me.jpg" }) => {
+const PhotoCircle = ({ backImageUrl = "/me.jpeg" }) => {
   const backTexture = useLoader(TextureLoader, backImageUrl);
   const backRef = useRef();
 

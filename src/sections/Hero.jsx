@@ -4,11 +4,12 @@ import gsap from "gsap";
 
 import AnimatedCounter from "../components/AnimatedCounter";
 import Button from "../components/Button";
-import { words } from "../constants";
+import { words, heroContent } from "../constants";
 import HeroExperience from "../components/models/hero_models/HeroExperience";
 import PhotoCircle from "../components/models/hero_models/PhotoCircle.jsx";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
+import Particles from "../components/models/hero_models/Particles.jsx";
 
 const Hero = () => {
   const [enableControls, setEnableControls] = useState(true);
@@ -69,15 +70,27 @@ const Hero = () => {
             </div>
 
             <p className="text-white-50 md:text-xl relative z-10 pointer-events-none">
-              Hi, I’m Ibrahim, a developer based in Egypt with a passion for
-              code.
+              {heroContent.description}
             </p>
 
-            <Button
-              text="See My Work"
-              className="md:w-80 md:h-16 w-60 h-12"
+            <div className="flex flex-wrap gap-4 mt-6 justify-center md:justify-start">
+             <Button
+              text={heroContent.buttonText}
+              className="md:w-60 w-48 h-12"
               id="counter"
             />
+            
+            <a 
+              href="/my.pdf" 
+              download="my.pdf"
+              className="md:w-60 w-48 h-12 rounded-lg border border-white/20 bg-white/5 hover:bg-white/10 flex items-center justify-center gap-2 group transition-all duration-300 backdrop-blur-sm"
+            >
+              <span className="text-sm md:text-lg font-medium text-white group-hover:text-blue-400 transition-colors">Download Resume</span>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5 group-hover:translate-y-1 transition-transform">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
+              </svg>
+            </a>
+          </div>
           </div>
         </header>
 
@@ -93,6 +106,7 @@ const Hero = () => {
                 <ambientLight intensity={1.5} />
                 <directionalLight position={[2, 2, 2]} />
                 <OrbitControls enableZoom={false} />
+                <Particles count={500} />
                 <PhotoCircle />
               </Canvas>
             ) : (
