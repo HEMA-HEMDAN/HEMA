@@ -19,7 +19,7 @@ const Hero = () => {
     gsap.fromTo(
       ".hero-text h1",
       { y: 50, opacity: 0 },
-      { y: 0, opacity: 1, stagger: 0.2, duration: 1, ease: "power2.inOut" }
+      { y: 0, opacity: 1, stagger: 0.2, duration: 1, ease: "power2.inOut" },
     );
   });
 
@@ -73,24 +73,37 @@ const Hero = () => {
               {heroContent.description}
             </p>
 
-            <div className="flex flex-wrap gap-4 mt-6 justify-center md:justify-start">
-             <Button
-              text={heroContent.buttonText}
-              className="md:w-60 w-48 h-12"
-              id="counter"
-            />
-            
-            <a 
-              href="/my.pdf" 
-              download="my.pdf"
-              className="md:w-60 w-48 h-12 rounded-lg border border-white/20 bg-white/5 hover:bg-white/10 flex items-center justify-center gap-2 group transition-all duration-300 backdrop-blur-sm"
-            >
-              <span className="text-sm md:text-lg font-medium text-white group-hover:text-blue-400 transition-colors">Download Resume</span>
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5 group-hover:translate-y-1 transition-transform">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
-              </svg>
-            </a>
-          </div>
+            <div className="flex  gap-4 mt-6 justify-center md:justify-start flex-row md:flex-col">
+              <Button
+                text={heroContent.buttonText}
+                className="md:w-60 w-48 h-12"
+                id="counter"
+              />
+
+              <a
+                href="/my.pdf"
+                download="my.pdf"
+                className="md:w-60 w-48 h-13 rounded-lg border border-white/20 bg-white/5 hover:bg-white/10 flex items-center justify-center gap-2 group transition-all duration-300 backdrop-blur-sm"
+              >
+                <span className="text-sm md:text-lg font-medium text-white group-hover:text-blue-400 transition-colors">
+                  Download Resume
+                </span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="w-5 h-5 group-hover:translate-y-1 transition-transform"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3"
+                  />
+                </svg>
+              </a>
+            </div>
           </div>
         </header>
 
@@ -111,7 +124,7 @@ const Hero = () => {
               </Canvas>
             ) : (
               <img
-                src="/me.jpg"
+                src="/me.jpeg"
                 alt="me"
                 className="w-[50vw] lg:w-[20vw] md:w-[30vw] rounded-full md:mt-0 mt-35 shadow-lg ring-30 ring-[#1a001f] shadow-[0_0_20px_8px_rgba(80,0,110,0.7)] "
               />
